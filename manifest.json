@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "IDX Announcement Analyzer",
+  "version": "1.0.0",
+  "description": "Scrape IDX disclosures, analyze PDFs with AI, post summaries to Discord",
+  "permissions": ["storage", "scripting", "tabs", "offscreen", "downloads"],
+  "host_permissions": [
+    "https://www.idx.co.id/*",
+    "https://openrouter.ai/*",
+    "https://discord.com/*",
+    "https://kodebita.com/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "IDX Analyzer"
+  }
+}

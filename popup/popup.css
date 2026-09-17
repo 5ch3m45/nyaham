@@ -1,0 +1,23 @@
+
+body { width: 420px; padding: 12px; font-family: system-ui, sans-serif; font-size: 13px; }
+h1 { font-size: 16px; margin: 0 0 12px; }
+label { display: block; margin-bottom: 8px; font-weight: 600; }
+input { display: block; width: 100%; margin-top: 3px; padding: 6px; font-weight: 400;
+        box-sizing: border-box; border: 1px solid #ccc; border-radius: 6px; }
+.checkbox-option { display: flex; align-items: center; justify-content: flex-start; gap: 0.5rem;
+                  margin-bottom: 8px; font-weight: 700; }
+.checkbox-option input[type="checkbox"] { display: inline-block; width: auto; margin: 0; padding: 0; }
+.hidden { display: none; }
+.action-row { display: flex; gap: 8px; margin-top: 8px; }
+button { flex: 1; padding: 10px; border: 0; border-radius: 8px; cursor: pointer;
+         background: #2563eb; color: #fff; font-weight: 700; }
+button:disabled { background: #93c5fd; cursor: not-allowed; }
+button.secondary { background: #475569; }
+button#clearCache { background: #dc2626; width: 100%; margin-top: 8px; }
+details { margin-top: 12px; }
+summary { cursor: pointer; font-weight: 600; margin-bottom: 8px; }
+#log { margin-top: 12px; max-height: 300px; overflow-y: auto;
+       background: #0f172a; color: #e2e8f0; border-radius: 8px;
+       padding: 8px; font-family: monospace; font-size: 11px; white-space: pre-wrap; }
+#log .error { color: #f87171; }
+#log .success { color: #4ade80; }

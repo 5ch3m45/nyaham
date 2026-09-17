@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h1>📈 IDX Analyzer</h1>
+
+  <label>From <input type="date" id="dateFrom"></label>
+  <label>To <input type="date" id="dateTo"></label>
+
+  <div class="action-row">
+    <button id="start">🚀 Start Scraping</button>
+    <button id="close" class="secondary">✖ Close</button>
+  </div>
+  <!-- check if update available -->
+  <div id="updateStatus" style="margin-top: 10px"></div>
+  <details>
+    <summary>⚙️ Settings</summary>
+    <label>Vikey.ai API Key
+      <input type="password" id="apiKey" placeholder="sk-or-...">
+    </label>
+    <label>Model
+      <input type="text" id="model" placeholder="nex-agi/nex-n2.5-pro:free">
+    </label>
+    <label id="webhookField">Discord Webhook URL
+      <input type="text" id="webhookUrl">
+    </label>
+    <label class="checkbox-option">
+      <input type="checkbox" id="saveToFile"> Save to file
+    </label>
+    <button id="clearCache">Clear cache (re-analyze everything)</button>
+  </details>
+
+  <div id="log"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -34,8 +34,8 @@ function checkForUpdate() {
       return;
     }
 
-    statusEl.textContent = response.isUpdateAvailable
-      ? "An update is available."
+    statusEl.innerHTML = response.isUpdateAvailable
+      ? "An update is available <a href='https://github.com/5ch3m45/nyaham/releases' target='_blank'>here</a>."
       : "You are up to date.";
   });
 }
